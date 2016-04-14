@@ -1,0 +1,13 @@
+php artisan cache:clear
+chmod -R 775 storage
+composer dump-autoload
+
+\Illuminate\Filesystem\Filesystem class to list all files in the directory using allFiles(string $directory)
+upload_max_filesize in php.ini
+
+$destinationPath = app_path() . "/mystorage/";
+Input::file('document')->move($destinationPath, "foobar.pdf");
+
+//download
+$file= app_path() . "/mystorage/foobar.pdf";
+return Response::download($file);
